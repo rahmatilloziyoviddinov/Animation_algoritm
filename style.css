@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    animation-name: img;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+.firstloading{
+    width: 290px;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 32px dotted black;
+    border-radius: 50%;
+    animation-name: firstloading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    filter: drop-shadow(0px 0px 3px #ffd500);
+}
+
+.wrapper_loading{
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 25px dotted black;
+    border-radius: 50%;
+    animation-name: wrapperloading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    filter: drop-shadow(0px 0px 3px #ffd500);
+}
+
+.ininloading {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px dotted black;
+    border-radius: 50%;
+    animation-name: ininloading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    filter: drop-shadow(0px 0px 3px #ffd500);
+}
+
+.inloading {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 15px dotted black;
+    border-radius: 50%;
+    animation-name: inloading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    filter: drop-shadow(0px 0px 3px #ffd500);
+}
+
+.loading {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 25px dotted black;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    filter: drop-shadow(0px 0px 3px #ffd500);
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes inloading {
+    100% {
+        transform: rotate(-720deg);
+    }
+}
+@keyframes ininloading {
+    100% {
+        transform: rotate(720deg);
+    }
+}
+@keyframes img {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes wrapperloading {
+    100% {
+        transform: rotate(-720deg);
+    }
+}
+@keyframes firstloading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
